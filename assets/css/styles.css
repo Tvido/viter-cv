@@ -43,7 +43,7 @@ body.dark-theme {
   --body-color: #2b2b2b;
 }
 
-.change-theme {
+.change-theme-moon {
   position: absolute;
   right: 1rem;
   top: 2.2rem;
@@ -53,7 +53,21 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.change-theme:hover {
+.change-theme-moon:hover {
+  color: var(--title-color);
+}
+
+.change-theme-info {
+  position: absolute;
+  left: 1rem;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.change-theme-info:hover {
   color: var(--title-color);
 }
 
@@ -116,7 +130,7 @@ img {
 
 .bd-container {
   max-width: 968px;
-  width: calc(100% - 1rem);
+  width: 100%;
 }
 
 .bd-grid {
@@ -158,6 +172,10 @@ img {
 
 .nav__logo {
   margin-left: 1rem;
+}
+
+.nav__toggle {
+  margin-right: 1rem;
 }
 
 .nav__logo,
@@ -280,8 +298,9 @@ img {
   color: var(--text-color);
 }
 
-.social__link:hover {
-  color: var(--text-color);
+.social__link:hover,
+.certificate__link:hover {
+  color: var(--title-color);
 }
 
 .social__icon {
@@ -424,6 +443,8 @@ img {
     grid-template-columns: 0.5fr 1fr;
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+    animation-name: animatetop;
+    animation-duration: 0.3s;
   }
 
   .resume__left {
@@ -480,4 +501,63 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #be5a1c;
+}
+
+.modal {
+  position: relative;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hiden;
+}
+
+.modal__close {
+  font-size: 22px;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  display: flex;
+  color: #ff9900e5;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  font-style: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  border: 1px solid #403a3a;
+}
+
+.modal__header {
+  margin: 60px 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__header {
+    margin: 60px 40px;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

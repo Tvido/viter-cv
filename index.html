@@ -72,7 +72,9 @@
       <div class="resume__left">
 
         <section class="home" id="home">
-          <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+          <i class='bx bx-moon change-theme-moon' title="Theme" id="theme-button"></i>
+
+          <i class='bx bx-info-circle change-theme-info' id="myModal"></i>
 
           <div class="home__container section bd-grid">
             <div class="home__data bd-grid">
@@ -86,7 +88,6 @@
                   <b class="headline-title">NODE.JS</b>
                 </span>
               </p>
-              <!-- <h3 class="home__profession">FULL STACK DEVELOPER</h3> -->
             </div>
 
             <div class="home__address bd-grid`">
@@ -351,12 +352,34 @@
           </div>
         </section>
 
+        <div id="modal" class="modal ">
+          <div class="modal__content resume__left">
+            <div class="modal__header ">
+              <i class='bx bx-x modal__close'></i>
+              <h2 class="section-title">Привіт, мій друг!</h2>
+              <p class="profile__description">Зараз ти переглядаєш моє резюме.
+                Тут Ти знайдеш усю необхідну інформацію про мене.
+              </p>
+              <p class="profile__description">Якщо з'являться запитання - то у лівій частині можна дізнатися,
+                як можна зі мною зв'язатися.</p>
+              <p class="profile__description">До зустрічі!
+              </p>
+
+            </div>
+            <div class="modal__body">
+              <p class="modal__description"></p>
+            </div>
+            <div class="modal__footer"></div>
+          </div>
+        </div>
+
         <a href="#" class="scrolltop" id="scroll-top">
           <i class='bx bx-chevrons-up scrolltop__icon'></i>
         </a>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="module" src="./assets/helpers/headcolumn/headcolumn.js"></script>
+        <script type="module" src="./assets/helpers/modal/modal.js"></script>
         <script type="module" src="./assets/js/main.js"></script>
 </body>
 
