@@ -7,7 +7,7 @@
   --text-color-light: #707070;
   --container-color: #fafafa;
   --container-color-alt: #f0efef;
-  --body-color: #fcfcfc;
+  --body-color: #e7e7e7;
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -538,7 +538,7 @@ img {
   border-radius: 0 0 5px 5px;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
-  border: 1px solid #403a3a;
+  border: 1px solid transparent;
 }
 
 .modal__header {
