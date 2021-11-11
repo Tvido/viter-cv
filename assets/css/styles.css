@@ -57,7 +57,7 @@ body.dark-theme {
   color: var(--title-color);
 }
 
-.change-theme-info {
+.info-btn {
   position: absolute;
   left: 1rem;
   top: 2.2rem;
@@ -67,7 +67,7 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.change-theme-info:hover {
+.info-btn:hover {
   color: var(--title-color);
 }
 
