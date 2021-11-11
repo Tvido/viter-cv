@@ -45,7 +45,7 @@ body.dark-theme {
 
 .change-theme {
   position: absolute;
-  right: 0;
+  right: 1rem;
   top: 2.2rem;
   display: flex;
   color: var(--text-color);
@@ -116,7 +116,7 @@ img {
 
 .bd-container {
   max-width: 968px;
-  width: calc(100% - 3rem);
+  width: calc(100% - 1rem);
 }
 
 .bd-grid {
@@ -157,7 +157,7 @@ img {
 }
 
 .nav__logo {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .nav__logo,
@@ -461,4 +461,23 @@ img {
     grid-template-columns: repeat(3, max-content);
     column-gap: 2.5rem;
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 60px;
+  border-radius: 2px;
+  background: #ff751d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #be5a1c;
 }
