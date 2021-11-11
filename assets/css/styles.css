@@ -2,34 +2,29 @@
 
 :root {
   --header-height: 3rem;
-
   --title-color: #0b0a0a;
   --text-color: #403a3a;
   --text-color-light: #707070;
   --container-color: #fafafa;
   --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
-
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
+  --h4-font-size: 0.25rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
-
   --font-medium: 500;
   --font-semi-bold: 600;
-
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
-
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-,
 ::before,
 ::after {
   box-sizing: border-box;
@@ -41,7 +36,7 @@ html {
 
 body.dark-theme {
   --title-color: #ff9900e5;
-
+  --title-color-secondary: #615fe4e5;
   --text-color: #bfbfbf;
   --container-color: #212121;
   --container-color-alt: #181616;
@@ -70,6 +65,8 @@ body {
   line-height: 1.17;
   background-color: var(--body-color);
   color: var(--text-color);
+
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -393,6 +390,10 @@ img {
   bottom: 5rem;
 }
 
+.headline-title {
+  font-size: 14px;
+}
+
 @media screen and (max-width: 320px) {
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
@@ -424,6 +425,11 @@ img {
 
   .resume__left {
     background-color: var(--container-color-alt);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 85% 100%, 100% 80%, 0 100%);
+  }
+
+  .headline-title {
+    font-size: 18px;
   }
 
   .resume__left,

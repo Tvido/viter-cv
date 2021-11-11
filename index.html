@@ -7,7 +7,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/helpers/headcolumn/headcolumn.css">
 
   <title>viter-cv</title>
 </head>
@@ -41,7 +42,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#expirience" class="nav__link">
+            <a href="#experience" class="nav__link">
               <i class='bx bx-briefcase nav__icon'></i>Expirience
             </a>
           </li>
@@ -77,7 +78,15 @@
             <div class="home__data bd-grid">
               <img src="assets/img/photo.jpg" alt="" class="home__img">
               <h1 class="home__title"><b>VITER</b> VOLODYMYR</h1>
-              <h3 class="home__profession"> FULL STACK DEVELOPER</h3>
+              <p class="cd-headline loading-bar">
+                <span class="cd-words-wrapper">
+                  <b class="is-visible headline-title">DEVELOPER</b>
+                  <b class="headline-title">JAVASCRIPT</b>
+                  <b class="headline-title">REACT.JS</b>
+                  <b class="headline-title">NODE.JS</b>
+                </span>
+              </p>
+              <!-- <h3 class="home__profession">FULL STACK DEVELOPER</h3> -->
             </div>
 
             <div class="home__address bd-grid`">
@@ -346,7 +355,9 @@
           <i class='bx bx-chevrons-up scrolltop__icon'></i>
         </a>
 
-        <script type="module" src="assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="./assets/helpers/headcolumn/headcolumn.js"></script>
+        <script type="module" src="./assets/js/main.js"></script>
 </body>
 
 </html>
