@@ -148,13 +148,16 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    padding: 2rem 1.5rem;
     background-color: var(--body-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: 0.3;
   }
+}
+
+.nav__logo {
+  margin-left: 2rem;
 }
 
 .nav__logo,
@@ -394,7 +397,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 0.5rem;
@@ -425,7 +428,7 @@ img {
 
   .resume__left {
     background-color: var(--container-color-alt);
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 85% 100%, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 10%, 85% 100%, 100% 80%, 0 100%);
   }
 
   .headline-title {
