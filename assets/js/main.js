@@ -85,11 +85,21 @@ function removeScale() {
 let areaCV = document.getElementById('area-cv');
 let downloadBtn = document.getElementById('myDownload');
 
+let opt = {
+  margin: 0,
+  filename: 'viterCv.pdf',
+  image: { type: 'jpeg', quality: 0.99 },
+  html2canvas: { scale: 4 },
+  jsPDF: { format: 'a4', orientation: 'portrait' },
+};
+
 function generateCv() {
-  html2pdf(areaCV);
+  html2pdf(areaCV, opt);
 }
 
 downloadBtn = addEventListener('click', () => {
   scaleCv();
   generateCv();
+
+  setTimeout(removeScale(), 3000);
 });
