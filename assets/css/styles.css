@@ -43,6 +43,87 @@ body.dark-theme {
   --body-color: #2b2b2b;
 }
 
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.8751rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
+
+.scale-cv .change-theme-moon,
+.scale-cv .download-btn,
+.scale-cv .info-btn {
+  display: none;
+}
+
+.scale-cv .bd-container {
+  min-width: 595px;
+}
+
+.scale-cv .section {
+  padding: 1rem 0 0.5rem;
+}
+
+.scale-cv .section-title {
+  margin-bottom: 0.7rem;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  padding: 0 1rem;
+}
+
+.scale-cv .home__img {
+  width: 90px;
+  height: 90px;
+}
+
+.scale-cv .home__container {
+  gap: 1.5rem;
+}
+
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .home__address,
+.scale-cv .social__container {
+  gap: 0.75rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon {
+  font-size: 1rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container {
+  gap: 1rem;
+}
+
+.scale-cv .education__date,
+.scale-cv .experience__date {
+  padding-right: 0.5rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+  width: 1px;
+  transform: translate(5px, 0);
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+  gap: 0.25rem;
+}
+
+.scale-cv .skills__name {
+  margin-bottom: var(--mb-1);
+}
+
 .change-theme-moon {
   position: absolute;
   right: 1rem;
@@ -68,6 +149,20 @@ body.dark-theme {
 }
 
 .info-btn:hover {
+  color: var(--title-color);
+}
+
+.download-btn {
+  position: absolute;
+  left: 3rem;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.download-btn:hover {
   color: var(--title-color);
 }
 

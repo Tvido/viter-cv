@@ -72,3 +72,24 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+//
+function scaleCv() {
+  document.body.classList.add('scale-cv');
+}
+
+function removeScale() {
+  document.body.classList.remove('scale-cv');
+}
+
+let areaCV = document.getElementById('area-cv');
+let downloadBtn = document.getElementById('myDownload');
+
+function generateCv() {
+  html2pdf(areaCV);
+}
+
+downloadBtn = addEventListener('click', () => {
+  scaleCv();
+  generateCv();
+});
