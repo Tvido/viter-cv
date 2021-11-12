@@ -562,7 +562,9 @@ img {
   padding: 60px 20px;
 }
 
-.scale-cv .change-theme-moon,
+/* TODO fix styles when dwnld pdf */
+
+/* .scale-cv .change-theme-moon,
 .scale-cv .download-btn,
 .scale-cv .info-btn {
   display: none;
@@ -633,7 +635,7 @@ img {
 
 .scale-cv .skills__name {
   margin-bottom: var(--mb-1);
-}
+} */
 
 @media screen and (min-width: 480px) {
   .modal__content {

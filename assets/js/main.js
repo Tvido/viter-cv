@@ -74,33 +74,33 @@ themeButton.addEventListener('click', () => {
 });
 
 //
-function scaleCv() {
-  document.body.classList.add('scale-cv');
-}
+// function scaleCv() {
+//   document.body.classList.add('scale-cv');
+// }
 
-function removeScale() {
-  document.body.classList.remove('scale-cv');
-}
+// function removeScale() {
+//   document.body.classList.remove('scale-cv');
+// }
 
-let areaCV = document.getElementById('area-cv');
-let downloadBtn = document.getElementById('myDownload');
+// let areaCV = document.getElementById('area-cv');
+// let downloadBtn = document.getElementById('myDownload');
 
-let opt = {
-  margin: 0,
-  filename: 'viterCv.pdf',
-  image: { type: 'jpeg', quality: 0.9 },
-  html2canvas: { scale: 1 },
-  enableLinks: true,
-  jsPDF: { format: 'legal', orientation: 'p' },
-};
+// let opt = {
+//   margin: 0,
+//   filename: 'viterCv.pdf',
+//   image: { type: 'jpeg', quality: 0.9 },
+//   html2canvas: { scale: 1 },
+//   enableLinks: true,
+//   jsPDF: { format: 'legal', orientation: 'p' },
+// };
 
-function generateCv() {
-  html2pdf(areaCV, opt);
-}
+// function generateCv() {
+//   html2pdf(areaCV, opt);
+// }
 
-downloadBtn = addEventListener('click', () => {
-  scaleCv();
-  generateCv();
+// downloadBtn = addEventListener('click', () => {
+//   scaleCv();
+//   generateCv();
 
-  setTimeout(removeScale(), 5000);
-});
+//   setTimeout(removeScale(), 5000);
+// });
