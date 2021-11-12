@@ -88,9 +88,10 @@ let downloadBtn = document.getElementById('myDownload');
 let opt = {
   margin: 0,
   filename: 'viterCv.pdf',
-  image: { type: 'jpeg', quality: 0.99 },
-  html2canvas: { scale: 4 },
-  jsPDF: { format: 'a4', orientation: 'portrait' },
+  image: { type: 'jpeg', quality: 0.9 },
+  html2canvas: { scale: 1 },
+  enableLinks: true,
+  jsPDF: { format: 'legal', orientation: 'p' },
 };
 
 function generateCv() {
@@ -101,5 +102,5 @@ downloadBtn = addEventListener('click', () => {
   scaleCv();
   generateCv();
 
-  setTimeout(removeScale(), 3000);
+  setTimeout(removeScale(), 5000);
 });
