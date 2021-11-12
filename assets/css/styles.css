@@ -449,6 +449,8 @@ img {
 
   .resume__left {
     background-color: var(--container-color-alt);
+    box-shadow: 10px 10px 5px rgba(13, 12, 12, 0.15);
+
     clip-path: polygon(0 0, 100% 0, 100% 10%, 85% 100%, 100% 80%, 0 100%);
   }
 
@@ -534,15 +536,12 @@ img {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
   border: 1px solid transparent;
-}
-
-.modal__header {
-  margin: 60px 20px;
+  padding: 60px 20px;
 }
 
 @media screen and (min-width: 480px) {
-  .modal__header {
-    margin: 60px 40px;
+  .modal__content {
+    padding: 60px 40px;
   }
 }
 
