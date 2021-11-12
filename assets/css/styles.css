@@ -138,7 +138,8 @@ img {
 }
 
 .section {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  padding: 1.5rem 2rem;
 }
 
 .section-title {
@@ -401,7 +402,7 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.certificate__content {
+.certificate__content:not(:last-child) {
   margin-bottom: var(--mb-1);
 }
 
