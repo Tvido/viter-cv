@@ -5,7 +5,7 @@
   --title-color: #0b0a0a;
   --text-color: #403a3a;
   --text-color-light: #707070;
-  --container-color: #fafafa;
+  --container-color: #f6f3f3;
   --container-color-alt: #f0efef;
   --body-color: #e7e7e7;
   --body-font: 'Poppins', sans-serif;
@@ -60,6 +60,7 @@ body.scale-cv {
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .change-theme-moon:hover {
@@ -74,6 +75,7 @@ body.scale-cv {
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .info-btn:hover {
@@ -320,6 +322,7 @@ img {
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--text-color);
+  transition: 0.5s;
 }
 
 .social__link:hover,
@@ -393,6 +396,10 @@ img {
 
 .skills__name a {
   color: var(--text-color);
+}
+
+.skills__name a:hover {
+  color: var(--title-color);
 }
 
 .skills__circle,
@@ -541,7 +548,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hiden;
+  overflow: hidden;
 }
 
 .modal__close {
@@ -550,7 +557,6 @@ img {
   left: 1rem;
   top: 1rem;
   display: flex;
-  color: #ff9900e5;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -559,6 +565,8 @@ img {
   font-style: 30px;
   text-decoration: none;
   cursor: pointer;
+  color: #ff9900e5;
+  transition: 0.5s;
 }
 
 .modal__content {
