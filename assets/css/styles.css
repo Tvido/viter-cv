@@ -104,7 +104,6 @@ body {
   line-height: 1.17;
   background-color: var(--body-color);
   color: var(--text-color);
-
   -webkit-font-smoothing: antialiased;
 }
 
@@ -521,17 +520,17 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 6px;
+  border-radius: 8px;
   background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   height: 60px;
-  border-radius: 2px;
+  border-radius: 6px;
   background: #ff751d;
 }
 
