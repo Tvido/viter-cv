@@ -1,486 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/helpers/headcolumn/headcolumn.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <link rel="stylesheet" href="./assets/helpers/headcolumn/headcolumn.css">
+    <title>viter-cv</title>
+  </head>
 
-  <title>viter-cv</title>
-</head>
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Viter</a>
 
-<body>
-  <header class="l-header" id="header">
-    <nav class="nav bd-container">
-      <a href="#" class="nav__logo">Viter</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link"> <i class="bx bx-user nav__icon"></i>Profile </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase nav__icon"></i>Expirience
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book-open nav__icon"></i>Education
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-extension nav__icon"></i>References
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class='bx bx-home-alt nav__icon'></i>Home
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class='bx bx-receipt nav__icon'></i>Skills
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#profile" class="nav__link">
-              <i class='bx bx-user nav__icon'></i>Profile
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#experience" class="nav__link">
-              <i class='bx bx-briefcase nav__icon'></i>Expirience
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#education" class="nav__link">
-              <i class='bx bx-book-open nav__icon'></i>Education
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#certificates" class="nav__link">
-              <i class='bx bx-award nav__icon'></i>Certificates
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#references" class="nav__link">
-              <i class='bx bx-extension nav__icon'></i>References
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-cube"></i>
+        </div>
+      </nav>
+    </header>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-cube'></i>
-      </div>
-    </nav>
-  </header>
+    <main class="l-main bd-container">
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <section class="home" id="home">
+            <i class="bx bx-info-circle info-btn" id="myModal"></i>
 
-  <main class="l-main bd-container">
-    <div class="resume" id="area-cv">
+            <!-- TODO fix error with dwnld btn /  -->
+            <!-- <i class='bx bx-cloud-download download-btn' id="myDownload"></i> -->
+            <i class="bx bx-moon change-theme-moon" title="Theme" id="theme-button"></i>
 
-
-      <div class="resume__left">
-
-        <section class="home" id="home">
-          <i class='bx bx-info-circle info-btn' id="myModal"></i>
-
-          <!-- TODO fix error with dwnld btn /  -->
-          <!-- <i class='bx bx-cloud-download download-btn' id="myDownload"></i> -->
-          <i class='bx bx-moon change-theme-moon' title="Theme" id="theme-button"></i>
-
-          <div class="home__container section bd-grid">
-            <div class="home__data bd-grid">
-              <img src="assets/img/photo.jpg" alt="" class="home__img">
-              <h1 class="home__title"><b>VITER</b> VOLODYMYR</h1>
-              <p class="cd-headline loading-bar">
-                <span class="cd-words-wrapper">
-                  <b class="is-visible headline-title">DEVELOPER</b>
-                  <b class="headline-title">JAVASCRIPT</b>
-                  <b class="headline-title">REACT.JS</b>
-                  <b class="headline-title">ANGULAR</b>
-                  <b class="headline-title">NODE.JS</b>
-                </span>
-              </p>
-            </div>
-
-            <div class="home__address bd-grid`">
-              <span class="home__information">
-                <i class='bx bx-map home__icon'></i>UKRAINE
-              </span>
-              <span class="home__information">
-                <i class='bx bx-envelope home__icon'></i>viter.volodymyr.d@gmail.com
-              </span>
-              <span class="home__information">
-                <i class='bx bx-phone-call home__icon'></i>+380991880475
-              </span>
-            </div>
-          </div>
-        </section>
-
-        <section class="social section">
-          <h2 class="section-title">SOCIAL</h2>
-
-          <div class="social__container bd-grid">
-            <a href="https://www.linkedin.com/in/viterd/" target="_blank" class="social__link">
-              <i class='bx bxl-linkedin-square social__icon'></i>in
-            </a>
-            <a href="https://github.com/Tvido" target="_blank" class="social__link">
-              <i class='bx bxl-github social__icon'></i>github
-            </a>
-          </div>
-        </section>
-
-        <section class="skills section" id="skills">
-          <div>
-            <h2 class="section-title">HARD SKILLS</h2>
-
-            <div class="skills__content bd-grid">
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    HTML
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/img/photo.jpg" alt="" class="home__img" />
+                <h1 class="home__title"><b>VITER</b> VOLODYMYR</h1>
+                <p class="cd-headline loading-bar">
+                  <span class="cd-words-wrapper">
+                    <b class="is-visible headline-title">DEVELOPER</b>
+                    <b class="headline-title">JAVASCRIPT</b>
+                    <b class="headline-title">REACT.JS</b>
+                    <b class="headline-title">ANGULAR</b>
+                    <b class="headline-title">NODE.JS</b>
                   </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    CSS/SCSS
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    JAVASCRIPT
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    WEBPACK
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    REACT.JS
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    ANGULAR
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    NODE.JS
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    GIT
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
-            <h2 class="section-title">SOFT SKILLS</h2>
-
-            <div class="skills__content bd-grid">
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    RESPONSIBILITY
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    COMMUNICATION
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    CREATIVITY
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    TEAMWORK
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    GOOGLING
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
-            <h2 class="section-title">METHODOLOGIES</h2>
-
-            <div class="skills__content bd-grid">
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    SCRUM
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    AGILE
-                  </span>
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span>
-                  <span>
-                    GTD
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      <div class="resume__right">
-
-        <section class="profile section" id="profile">
-          <h2 class="section-title">PROFILE</h2>
-
-          <p class="profile__description">At the moment I am finished my studies at the GoIT courses. I have basic
-            knowledge of HTML, CSS, Git, Github, Webpack, Parsel, Javascript, React.js, Node.js etc. I want to continue
-            to improve my skills as a future Full Stack Developer</p>
-        </section>
-
-        <section class="experience section" id="experience">
-          <h2 class="section__title">EXPERIENCE</h2>
-
-          <div class="experience__container bd-grid">
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Web-UI Developer Internship</h3>
-                <span class="experience__year">2021</span>
-                <span class="experience__company"><strong>SoftServe</strong></span>
-                <p class="experience__description">Developing Web UI applications</p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">PROMOUTER</h3>
-                <span class="experience__year">2017 - 2021</span>
-                <span class="experience__company"><strong>SAMSUNG</strong></span>
-                <p class="experience__description">Organization of directions of sale of goods. Personnel training. Sale
-                  of equipment</p>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">MENTOR</h3>
-
-                <span class="experience__year">2011 - 2017</span>
-                <span class="experience__company"><strong>FOXTROT</strong></span>
-                <p class="experience__description">Organization of directions of sale of goods. Personnel training. Sale
-                  of equipment
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="education section" id="education">
-          <h2 class="section__title">EDUCATION</h2>
-
-          <div class="education__container bd-grid">
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Tourism</h3>
-
-                <span class="education__year">2004 - 2010</span>
-                <span class="education__studies"><strong>Galych Academy</strong></span>
+              <div class="home__address bd-grid`">
+                <span class="home__information"> <i class="bx bx-map home__icon"></i>UKRAINE </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>viter.volodymyr.d@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone-call home__icon"></i>+380991880475
+                </span>
               </div>
             </div>
+          </section>
 
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
 
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Computer systems and networks</h3>
-
-                <span class="education__year">2005 - 2009</span>
-                <span class="education__studies"><strong>Galych Academy</strong></span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="education section">
-          <h2 class="section__title">ADDITIONAL EDUCATION</h2>
-
-          <div class="education__container bd-grid">
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">WEB-UI DEVELOPER</h3>
-
-                <span class="education__year">2021 - 2022</span>
-                <span class="education__studies"><strong>SOFTSERVE</strong></span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="education__container bd-grid">
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">FULL STACK DEVELOPER</h3>
-
-                <span class="education__year">2020 - 2021</span>
-                <span class="education__studies"><strong>GoIT</strong></span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="certificate section" id="certificates">
-          <h2 class="section__title">CERTIFICATES</h2>
-
-          <div class="certificate__container">
-            <div class="certificate__content">
-              <h3 class="certificate__title">2022 | SOFTSERVE | WEB-UI DEVELOPER</h3>
-
-              <a href="https://drive.google.com/file/d/1st6Qp_P7_DXL6ODB_Dy3YZJB3vBdahTf/view?usp=sharing" target="_blank"
-                class="certificate__link">
-                <i class='bx bxs-edit'></i>CERTIFICATE
+            <div class="social__container bd-grid">
+              <a href="https://www.linkedin.com/in/viterd/" target="_blank" class="social__link">
+                <i class="bx bxl-linkedin-square social__icon"></i>in
+              </a>
+              <a href="https://github.com/Tvido" target="_blank" class="social__link">
+                <i class="bx bxl-github social__icon"></i>github
               </a>
             </div>
-            <div class="certificate__content">
-              <h3 class="certificate__title">2021 | GoIT | FULL STACK DEVELOPER</h3>
+          </section>
 
-              <a href="https://drive.google.com/file/d/1CdAVzkssWzSCDc-Roebanw75kqKjW1-M/view?usp=sharing" target="_blank"
-                class="certificate__link">
-                <i class='bx bxs-edit'></i>CERTIFICATE
-              </a>
+          <section class="skills section" id="skills">
+            <div>
+              <h2 class="section-title">HARD SKILLS</h2>
+
+              <div class="skills__content bd-grid">
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> HTML </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> CSS/SCSS </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> JAVASCRIPT </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> WEBPACK </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> REACT.JS </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> ANGULAR </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> NODE.JS </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> GIT </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
 
-        <section class="languages section">
-          <h2 class="section__title">LANGUAGES</h2>
+            <div>
+              <h2 class="section-title">SOFT SKILLS</h2>
 
-          <div class="languages__container">
-            <div class="languages__content bd-grid">
-              <ul>
-                <li class="languages__name">
-                  <span class="languages__circle"></span>
-                  <span>
-                    UKRAINIAN - native
-                  </span>
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span>
-                  <span>
-                    ENGLISH - intermidiate
-                  </span>
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span>
-                  <span>
-                    RUSSIAN - fluent
-                  </span>
-                </li>
-              </ul>
+              <div class="skills__content bd-grid">
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> RESPONSIBILITY </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> COMMUNICATION </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> CREATIVITY </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> TEAMWORK </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> GOOGLING </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
 
-        <section class="references section" id="references">
-          <h2 class="section-title">REFERENCES</h2>
+            <div>
+              <h2 class="section-title">METHODOLOGIES</h2>
 
-          <div class="references__container bd-grid">
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">CONTACT ME</span>
-              <h3 class="references__title">VITER VOLODYMYR</h3>
-
-              <ul class="references__contact">
-                <li><span class="home__information">
-                    <i class='bx bx-phone-call home__icon'></i>+380991880475
-                  </span>
-                </li>
-                <li>
-                  <span class="home__information">
-                    <i class='bx bx-envelope home__icon'></i>viter.volodymyr.d@gmail.com
-                  </span>
-                </li>
-              </ul>
+              <div class="skills__content bd-grid">
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> SCRUM </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> AGILE </span>
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>
+                    <span> GTD </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <section class="profile section" id="profile">
+            <h2 class="section-title">PROFILE</h2>
+
+            <p class="profile__description">
+              As of now, I have graduated from SOFTSERVE Internship and GoIT courses. I have basic
+              knowledge of HTML, CSS, Git, Github, Webpack, Javascript, React.js, Angular, Node.js,
+              etc. I want to continue improving my skills as a Full Stack developer
+            </p>
+          </section>
+
+          <section class="experience section" id="experience">
+            <h2 class="section__title">EXPERIENCE</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Web-UI Developer Internship</h3>
+                  <span class="experience__year">2021 - 2022</span>
+                  <span class="experience__company"><strong>SoftServe</strong></span>
+                  <p class="experience__description">Developing Web UI applications</p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">PROMOUTER</h3>
+                  <span class="experience__year">2017 - 2021</span>
+                  <span class="experience__company"><strong>SAMSUNG</strong></span>
+                  <p class="experience__description">
+                    Organization of directions of sale of goods. Personnel training. Sale of
+                    equipment
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">MENTOR</h3>
+
+                  <span class="experience__year">2011 - 2017</span>
+                  <span class="experience__company"><strong>FOXTROT</strong></span>
+                  <p class="experience__description">
+                    Organization of directions of sale of goods. Personnel training. Sale of
+                    equipment
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="education section" id="education">
+            <h2 class="section__title">EDUCATION</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Tourism</h3>
+
+                  <span class="education__year">2004 - 2010</span>
+                  <span class="education__studies"><strong>Galych Academy</strong></span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Computer systems and networks</h3>
+
+                  <span class="education__year">2005 - 2009</span>
+                  <span class="education__studies"><strong>Galych Academy</strong></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="education section">
+            <h2 class="section__title">ADDITIONAL EDUCATION</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">WEB-UI DEVELOPER</h3>
+
+                  <span class="education__year">2021 - 2022</span>
+                  <span class="education__studies"><strong>SOFTSERVE</strong></span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">FULL STACK DEVELOPER</h3>
+
+                  <span class="education__year">2020 - 2021</span>
+                  <span class="education__studies"><strong>GoIT</strong></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="certificate section" id="certificates">
+            <h2 class="section__title">CERTIFICATES</h2>
+
+            <div class="certificate__container">
+              <div class="certificate__content">
+                <h3 class="certificate__title">2022 | SOFTSERVE | WEB-UI DEVELOPER</h3>
+
+                <a
+                  href="https://drive.google.com/file/d/1st6Qp_P7_DXL6ODB_Dy3YZJB3vBdahTf/view?usp=sharing"
+                  target="_blank"
+                  class="certificate__link"
+                >
+                  <i class="bx bxs-edit"></i>CERTIFICATE
+                </a>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">2021 | GoIT | FULL STACK DEVELOPER</h3>
+
+                <a
+                  href="https://drive.google.com/file/d/1CdAVzkssWzSCDc-Roebanw75kqKjW1-M/view?usp=sharing"
+                  target="_blank"
+                  class="certificate__link"
+                >
+                  <i class="bx bxs-edit"></i>CERTIFICATE
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="languages section">
+            <h2 class="section__title">LANGUAGES</h2>
+
+            <div class="languages__container">
+              <div class="languages__content bd-grid">
+                <ul>
+                  <li class="languages__name">
+                    <span class="languages__circle"></span>
+                    <span> UKRAINIAN - native </span>
+                  </li>
+                  <li class="languages__name">
+                    <span class="languages__circle"></span>
+                    <span> ENGLISH - intermidiate </span>
+                  </li>
+                  <li class="languages__name">
+                    <span class="languages__circle"></span>
+                    <span> RUSSIAN - fluent </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="references section" id="references">
+            <h2 class="section-title">REFERENCES</h2>
+
+            <div class="references__container bd-grid">
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">CONTACT ME</span>
+                <h3 class="references__title">VITER VOLODYMYR</h3>
+
+                <ul class="references__contact">
+                  <li>
+                    <span class="home__information">
+                      <i class="bx bx-phone-call home__icon"></i>+380991880475
+                    </span>
+                  </li>
+                  <li>
+                    <span class="home__information">
+                      <i class="bx bx-envelope home__icon"></i>viter.volodymyr.d@gmail.com
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal__content resume__left">
+        <div class="modal__header">
+          <i class="bx bx-x modal__close"></i>
+          <h2 class="section-title">Dear friend!</h2>
+
+          <p class="profile__description">
+            You are currently viewing my resume. Here you will find all the necessary information
+            about me.
+          </p>
+          <p class="profile__description">If you have any questions - please contact me.</p>
+          <p class="profile__description">See you!</p>
+        </div>
       </div>
     </div>
-  </main>
 
-  <div id="modal" class="modal ">
-    <div class="modal__content resume__left">
-      <div class="modal__header ">
-        <i class='bx bx-x modal__close'></i>
-        <h2 class="section-title">Dear friend!</h2>
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevrons-up scrolltop__icon"></i>
+    </a>
 
-        <p class="profile__description">You are currently viewing my resume.
-          Here you will find all the necessary information about me.
-        </p>
-        <p class="profile__description">If you have any questions - please contact me.</p>
-        <p class="profile__description">See you!
-        </p>
-      </div>
-    </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <a href="#" class="scrolltop" id="scroll-top">
-    <i class='bx bx-chevrons-up scrolltop__icon'></i>
-  </a>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script type="module" src="./assets/helpers/headcolumn/headcolumn.js"></script>
-  <script type="module" src="./assets/helpers/modal/modal.js"></script>
-  <!-- <script type="module" src="./assets/helpers/html2pdf/html2pdf.bundle.min.js"></script> -->
-  <script type="module" src="./assets/js/main.js"></script>
-</body>
-
+    <script type="module" src="./assets/helpers/headcolumn/headcolumn.js"></script>
+    <script type="module" src="./assets/helpers/modal/modal.js"></script>
+    <!-- <script type="module" src="./assets/helpers/html2pdf/html2pdf.bundle.min.js"></script> -->
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
 </html>
