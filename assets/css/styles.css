@@ -149,7 +149,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.35rem;
   text-align: center;
-  margin-bottom: var(--mb-1);
+  /* margin-bottom: var(--mb-1); */
 }
 
 .bd-container {
@@ -376,6 +376,10 @@ img {
   font-size: var(--h3-font-size);
 }
 
+.skills div {
+  margin-bottom: var(--mb-2);
+}
+
 .skills__content {
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
@@ -385,6 +389,10 @@ img {
 .languages__name {
   display: flex;
   align-items: center;
+}
+
+.skills__name a {
+  color: var(--text-color);
 }
 
 .skills__circle,
