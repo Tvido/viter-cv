@@ -125,6 +125,7 @@ h3 {
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -148,9 +149,9 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  /* letter-spacing: 0.35rem; */
   text-align: center;
-  /* margin-bottom: var(--mb-1); */
+  margin-bottom: var(--mb-1);
 }
 
 .bd-container {
@@ -161,6 +162,10 @@ img {
 .bd-grid {
   display: grid;
   gap: 1.5rem;
+}
+
+article {
+  margin-bottom: 2rem;
 }
 
 .l-header {
@@ -380,11 +385,6 @@ img {
 
 .skills div {
   margin-bottom: var(--mb-2);
-}
-
-.skills__content {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
 }
 
 .skills__name,
